@@ -25,9 +25,9 @@
 2. 解压 Chrome Neo Extension DevTools.zip 文件。
 
 3. 打开 Chrome 浏览器，并进入到扩展程序页面。
-   ![](./graphics/销售易CRM_PaaS_平台_NEX页面扩展开发手册_V2108_topic10_image002.png)
+   ![](../graphics/销售易CRM_PaaS_平台_NEX页面扩展开发手册_V2108_topic10_image002.png)
 
 4. 在**扩展程序**页面中，单击**加载已解压的扩展程序**，选择第5步解压的文件夹即可安装。
 
 5. 安装成功后，Breeze DevTools 会显示在**扩展程序**页面中。
-   ![](./graphics/销售易CRM_PaaS_平台_NEX页面扩展开发手册_V2108_topic10_image004.png)
+   ![](../graphics/销售易CRM_PaaS_平台_NEX页面扩展开发手册_V2108_topic10_image004.png)

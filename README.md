@@ -28,17 +28,33 @@ docs/
 ├── .vitepress/
 │   └── config.mts                  # 站点配置（导航、侧边栏）
 └── v1/                             # NEX 1.0 页面扩展开发手册内容
-    ├── newNex10Dev_overview.md     # 概述
-    ├── newNex10Dev_preconditions.md # 前提条件
-    ├── newNex10Dev_environmentPreparation.md # 环境准备
-    ├── newNex10Dev_configAndManagementExtensionCode.md # 配置及管理扩展代码
-    ├── newNex10Dev_familiarizeToolInterface.md # 熟悉工具界面
-    ├── newNex10Dev_createExtensionCode*.md # 创建扩展代码（网页端/移动端）
-    ├── newNex10Dev_manageExtensionCode*.md # 管理扩展代码
-    ├── newNex10Dev_faq.md          # 常见问题
+    ├── 入门/                        # 功能模块：概述、前提条件、环境准备
+    │   ├── 概述.md
+    │   ├── 前提条件.md
+    │   └── 环境准备.md
+    ├── 扩展代码管理/                 # 功能模块：扩展代码的创建与管理
+    │   ├── 配置及管理扩展代码.md
+    │   ├── 熟悉工具界面.md
+    │   ├── 创建扩展代码.md
+    │   ├── 网页端/                  # 网页端
+    │   │   └── 网页端创建步骤.md
+    │   ├── 移动端/                  # 移动端
+    │   │   └── 移动端创建步骤.md
+    │   ├── 管理扩展代码.md
+    │   ├── 查看扩展代码列表.md
+    │   ├── 编辑扩展代码.md
+    │   ├── 创建新版本.md
+    │   ├── 禁用扩展代码.md
+    │   └── 删除扩展代码.md
+    ├── 常见问题/
+    │   └── 常见问题.md
     ├── images/                     # 主手册图片
-    └── RPA页面扩展开发手册/          # 原 RPA 部分
-        ├── *.md                    # RPA 扩展开发手册章节
+    └── RPA页面扩展开发手册/          # 原 RPA 部分（按章节分目录）
+        ├── 第一章_RPA扩展开发简介/
+        ├── 第二章_RPA扩展开发方法说明/  # 含 网页端/移动端/自定义页面 子目录
+        ├── 第三章_RPA代码编写说明/
+        ├── 第四章_RPA扩展开发相关支持说明/
+        ├── RPA扩展开发示例.md
         └── graphics/               # RPA 手册图片
 ```
 

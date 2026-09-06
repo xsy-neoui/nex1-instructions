@@ -1,7 +1,0 @@
-# 删除扩展代码
-
-对于不再需要使用的扩展代码，可以将其删除。
-
-在[扩展代码列表](./newNex10Dev_viewExtensionCodeList.md)中，将鼠标悬浮于扩展代码名称后面的发布状态上，然后菜单中的**删除**。
-
-![](./images/newNex10Dev_deleteExtensionCode1.png)
