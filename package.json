@@ -1,0 +1,14 @@
+{
+  "name": "nex1-instructions",
+  "version": "1.0.0",
+  "description": "NEX 1.0 页面扩展开发手册（基于 Neo Extension DevTools 的页面扩展开发指南）",
+  "private": true,
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "vitepress": "^1.3.0"
+  }
+}

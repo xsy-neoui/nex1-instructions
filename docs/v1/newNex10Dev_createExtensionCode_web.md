@@ -1,0 +1,54 @@
+# 网页端创建步骤
+
+遵循以下步骤，创建网页端扩展代码：
+
+1. 在 Chrome 浏览器登录销售易系统。
+
+2. 打开目标对象的新建或编辑页。
+
+3. 打开开发者工具（F12 或者鼠标右击页面的任意位置并在快捷菜单中单击**检查**），然后切换到 **Neo Extension** 页签。
+   ![](./images/newNex10Dev_createExtensionCode_web1.png)
+
+4. 单击**新建**，右侧会自动生成代码框架。
+   ![](./images/newNex10Dev_createExtensionCode_web2.png)
+
+5. 根据页面扩展需求，编写代码。
+   示例代码实现功能：将“级别”字段设置为只读状态，即不允许修改此字段值。
+
+   如果希望快速查看效果，可以直接使用此示例代码测试。复制代码后，粘贴覆盖自动生成的代码，然后将代码中的“suppliers__c”替换为当前打开对象的 API 名称，将“level__c”替换为要设置只读字段的 API 名称。
+
+   ```javascript
+   (function() {
+       return {
+           utilScope: function(ctx) {
+               return {}
+           },
+           entityScope: [{
+               "name": "suppliers__c.form",
+               "view": function(ctx, props) {
+                   return {
+                       view: {
+                           "type": "EntityForm",
+                           "controls": [{
+                               "apiKey": "level__c",
+                               "disabled": true
+                           }]
+                       }
+                   }
+               }
+           }],
+           layoutScope: [
+
+           ]
+       }
+   })
+   ```
+
+   ::: info
+   关于扩展代码的编写方法（代码结构、扩展工具函数、扩展示例）的介绍，请参考 [Neo 扩展开发文档](https://ui.neocrm.com/web/#/extension)。
+   :::
+
+6. 单击**预览**，并等待页面刷新完成后，单击新建数据按钮打开表单页，即可查看代码执行效果。
+   ![](./images/newNex10Dev_createExtensionCode_web3.png)
+
+7. 预览效果无误后，可以单击**保存**或**发布**。
