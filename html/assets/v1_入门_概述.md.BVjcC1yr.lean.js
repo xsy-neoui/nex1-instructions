@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as o,a2 as r}from"./chunks/framework.BXzK3EA4.js";const m=JSON.parse('{"title":"概述","description":"","frontmatter":{},"headers":[],"relativePath":"v1/入门/概述.md","filePath":"v1/入门/概述.md"}'),l={name:"v1/入门/概述.md"};function n(s,e,i,_,p,c){return a(),o("div",null,[...e[0]||(e[0]=[r("",6)])])}const u=t(l,[["render",n]]);export{m as __pageData,u as default};
