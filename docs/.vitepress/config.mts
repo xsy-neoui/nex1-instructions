@@ -7,6 +7,9 @@ export default defineConfig({
   base,
   outDir: '../html',
   assetsDir: './assets',
+  vite: {
+    publicDir: '../public',
+  },
   title: 'NEX 1.0 页面扩展开发手册',
   description: 'NEX 1.0 页面扩展开发手册：基于 Neo Extension DevTools 的页面扩展开发指南',
   head: [
