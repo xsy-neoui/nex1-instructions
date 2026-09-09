@@ -9,7 +9,21 @@ export default defineConfig({
   assetsDir: './assets',
   title: 'NEX 1.0 页面扩展开发手册',
   description: 'NEX 1.0 页面扩展开发手册：基于 Neo Extension DevTools 的页面扩展开发指南',
+  head: [
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        // head 中的 href 不会自动加 base，需与上面 base 保持一致
+        href: `${base}img/favicon.ico`,
+      },
+    ],
+    // 百度统计：public/js/tongji.js，构建后每个 HTML 页面 head 中都会引入
+    ['script', { src: `${base}js/tongji.js` }],
+  ],
   themeConfig: {
+    logo: `/img/nex-logo.png`, // 会自动加 base
     search: {
       provider: 'local',
     },
